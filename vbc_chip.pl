@@ -9,6 +9,9 @@ my $Command  = "C:\\Program Files\\Oracle\\VirtualBox\\VBoxManage.exe";
 my $CNECTNIC = "NIC 2";
 my $NETNAME  = "VirtualBox Host-Only Ethernet Adapter";
 
+##コンソールをUTF8に
+my $COMMND1 = `chcp 65001`;
+
 my @l_VPCLIST = ();
 my %h_VPCUID  = ();
 my %h_Nic2Vpc = ();
